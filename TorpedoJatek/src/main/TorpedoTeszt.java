@@ -7,7 +7,8 @@ public class TorpedoTeszt {
     }
 
     public static String tesztLoves(int poz) {
-        Hajo hajo = new Hajo();
+        int[] tomb = {5,6,7};
+        Hajo hajo = new Hajo(tomb);
         String t = hajo.talalat(poz);
         assert t.equals("talált") : "nem jó a találat ellenőrzése";
         return "";
